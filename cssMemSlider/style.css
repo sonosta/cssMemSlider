@@ -12,9 +12,46 @@
 .slider{ 
     height: 200px;
     background-color: aqua;
+    
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+.slides{
+    width: 300%;
+    transition: all 0.5s;
+}
+.slides img{
+    height: 200px;
+    width: 400px;
+    float: left;
 }
 .TextAndBtn{
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+
+#1:checked~ #labels label[for="1"]{
+    background-color: white;
+}
+#2:checked~ #labels label[for="2"]{
+    background-color: white;
+}
+#3:checked~ #labels label[for="3"]{
+    background-color: white;
+}
+#4:checked~ #labels label[for="4"]{
+    background-color: white;
+}
+#5:checked~ #labels label[for="5"]{
+    background-color: white;
+}
+.slider{
+    overflow: hidden;
+}
+
+#btn1:checked~.slider .slides{
+    transform: translate(0);
+}
+#btn2:checked~.slider .slides{
+    transform: translate(-680px);
 }
