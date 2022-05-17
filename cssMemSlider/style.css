@@ -61,7 +61,8 @@ input{
 }
 label{
     height: 10px;
-    width: 30px;
+    width: 10px;
+    border-radius: 50%;
     column-gap: 5px;
     border: solid 1px;
     cursor: pointer;
@@ -91,4 +92,16 @@ input#b4:checked ~ .slider {
 
 input#b5:checked ~ .slider {
     margin-left: -400%;
+}
+
+@media (max-width:768px){
+    p{
+        top: 30px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-L{
+        position: relative;
+        left: calc(-200px/2);
+    }
 }
